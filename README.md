@@ -6,9 +6,7 @@
 
 Hapu is Airbnb for nanny share. Share your home, nanny, and costs and create new flexible, affordable solutions in childcare.
 
-Simple land page, with A/B test and newsletter API integration.
-
-Project developed as a ReactJs technical challenge for the Jungle Dev's company.
+Simple land page,
 
 ---
 
@@ -33,7 +31,7 @@ Before you start, you need to install the following tools on your computer:
 ```bash
 
 # Clone this repository
-$ https://github.com/angelis-reis/become-a-nanny
+
 
 # Access the project folder
 $ cd become-a-nanny
@@ -73,11 +71,9 @@ This are the tolls used in this project:
 ### **Website** ([React](https://reactjs.org/))
 
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
--   **[Axios](https://github.com/axios/axios)**
 -   **[styled-components](https://github.com/styled-components/styled-components)**
 -   **[react-hook-form](https://github.com/react-hook-form/react-hook-form)**
 -   **[hookform/error-message](https://github.com/react-hook-form/error-message)**
--   **[react-ab-test](https://github.com/marvelapp/react-ab-test)**
 -   **[mixpanel](https://github.com/mixpanel/mixpanel-js)**
 -   **[Eslint](https://github.com/eslint/eslint)**
 -   **[prettier](https://github.com/prettier/prettier)**
@@ -90,11 +86,6 @@ This are the tolls used in this project:
 
 ## 🦸 Author
 
-<a href="https://github.com/angelis-reis">
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/18598530?v=4" width="100px;" alt=""/>
-<br />
-<sub><b>Frederico de Angelis Reis</b></sub></a>
-<br />
 
 ---
 
