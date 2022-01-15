@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import styled from 'styled-components';
-import ImgHero from '../../images/ImageHeader.png';
+import ImgHero from '../../../images/ImageHeader.png';
 
 const HeroStyle = styled.section`
 	height: 616px;
