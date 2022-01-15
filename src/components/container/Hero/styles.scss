@@ -3,11 +3,11 @@
 	display: grid;
 	justify-items: center;
 	background: linear-gradient(175deg, #5912ac, #7e49c3, #c86dd7),
-		url(Image.png);
+		url('../../../images/Image.png');
 	object-fit: cover;
 	background-blend-mode: overlay;
 	background-size: cover;
-	place-self: center stretch;
+	place-self: center stretch; 
 
 	.hero-content {
 		display: grid;
