@@ -16,20 +16,19 @@ const LandingPageStyle = styled.div`
 `;
 
 function LandingPage() {
-  return (
-    <LandingPageStyle>
-      <Header />
-      <Hero />
-      <Booking />
-      <Share />
-      <Payments />
-      <Framework />
-      <Billing />
-      <Diary />
-      <Host />
-      <Footer />
-    </LandingPageStyle>
-
-  );
+	return (
+		<LandingPageStyle>
+			<Header />
+			<Hero />
+			<Booking />
+			<Share />
+			<Payments />
+			<Framework />
+			<Billing />
+			<Diary />
+			<Host />
+			<Footer />
+		</LandingPageStyle>
+	);
 }
 export default LandingPage;
