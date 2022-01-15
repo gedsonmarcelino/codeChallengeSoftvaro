@@ -4,23 +4,23 @@
 	height: 528px;
 	background: var(--color-background);
 
-	.Payment-content {
+	.payment-content {
 		margin-top: 104px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 44px;
 		width: 984px;
 	}
-	.Payment-text {
+	.payment-text {
 		width: 450px;
 	}
-	.Payment-text h2 {
+	.payment-text h2 {
 		margin-bottom: 40px;
 	}
-	.Payment-text p {
+	.payment-text p {
 		margin-bottom: 40px;
 	}
-	.Payment-img {
+	.payment-img {
 		width: 456px;
 		height: 336px;
 		justify-self: end;
@@ -43,7 +43,7 @@
 			font-size: 22px;
 		}
 
-		.Payment-content {
+		.payment-content {
 			margin-top: 0px;
 			display: grid;
 			grid-template-columns: 1fr;
@@ -52,25 +52,25 @@
 			width: 360px;
 			text-align: center;
 		}
-		.Payment-text {
+		.payment-text {
 			width: 328px;
 			margin-top: 16px;
 			margin-top: 0px;
 			margin-bottom: 24px;
 		}
-		.Payment-text h2 {
+		.payment-text h2 {
 			font-size: 22px;
 			width: 245px;
 			margin-left: 60px;
 			margin-right: 60px;
 		}
-		.Payment-text p {
+		.payment-text p {
 			width: 328px;
 			margin-left: 16px;
 			margin-right: 16px;
 			margin-bottom: 40px;
 		}
-		.Payment-img {
+		.payment-img {
 			width: 312px;
 			height: 230px;
 			margin-top: 64px;

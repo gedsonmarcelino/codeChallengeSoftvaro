@@ -9,17 +9,21 @@
 		text-align: center;
 		margin-top: 96px;
 	}
+
 	img {
 		width: 216px;
 		height: 96px;
 	}
+
 	h2 {
 		margin-top: 40px;
 	}
-	.Diary-text {
+
+	.diary-text {
 		width: 784px;
 		margin-top: 40px;
 	}
+
 	.divider {
 		width: 784px;
 		border-top: solid 2px var(--color-gray);
@@ -36,10 +40,12 @@
 			margin-top: 64px;
 			width: 360px;
 		}
+
 		h2 {
 			font-size: 22px;
 			margin-top: 24px;
 		}
+		
 		.Diary-text {
 			width: 328px;
 			margin-top: 16px;

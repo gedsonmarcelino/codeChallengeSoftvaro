@@ -13,37 +13,44 @@
 		grid-area: hapu-logo;
 		margin-left: 128px;
 		align-self: center;
+		
+		img {
+			width: 64px;
+			height: 24px;
+		}
 	}
-	.hapu-logo img {
-		width: 64px;
-		height: 24px;
-	}
+
 	.footer-links {
 		grid-area: footer-links;
 		display: flex;
 		gap: 30px;
 		align-self: center;
+
+		a{
+			text-align: center;
+			text-decoration: none;
+			color: var(--color-gray-dark);
+		}
 	}
-	.footer-link {
-		text-align: center;
-		text-decoration: none;
-		color: var(--color-gray-dark);
-	}
+
 	.social-media {
 		grid-area: social-media;
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 128px;
 		align-self: center;
+		
+		img {
+			width: 45px;
+			height: 45px;
+		}
 	}
-	.social-media img {
-		width: 45px;
-		height: 45px;
-	}
+
 	.twiter-icon {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
+	
 	.copyright {
 		grid-area: copyright;
 		text-align: center;

@@ -9,11 +9,13 @@
 		height: 56px;
 		margin-right: 32px;
 	}
+
 	.action-link span {
 		color: var(--color-primary);
 		text-decoration: underline;
 		text-decoration-color: var(--color-primary);
 	}
+
 	@media screen and (max-width: 1000px) {
 		height: 216px;
 
@@ -29,6 +31,7 @@
 			margin-bottom: 12px;
 			width: 212px;
 		}
+		
 		h4 {
 			font-size: 14px;
 			line-height: 20px;

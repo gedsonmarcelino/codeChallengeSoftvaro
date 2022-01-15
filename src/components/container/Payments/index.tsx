@@ -8,13 +8,13 @@ function Payment() {
 	return (
 		<section className='payment'>
 			<Router>
-				<div className='Payment-content'>
+				<div className='payment-content'>
 					<img
-						className='Payment-img'
+						className='payment-img'
 						src={ImgSect3}
 						alt='Payments share console'
 					/>
-					<div className='Payment-text'>
+					<div className='payment-text'>
 						<h2>Shared payments made simple</h2>
 						<p>
 							Sometimes it’s hard enough just sharing a restaurant

@@ -16,16 +16,16 @@ function Footer() {
 					<img src={HapuLogo} alt='Hapu Logo' />
 				</Link>
 				<div className='footer-links'>
-					<Link className='footer-link' to='/share'>
+					<Link to='/share'>
 						<h5>Share Your Nanny</h5>
 					</Link>
-					<Link className='footer-link' to='/story'>
+					<Link to='/story'>
 						<h5>Our Story</h5>
 					</Link>
-					<Link className='footer-link' to='/blog'>
+					<Link to='/blog'>
 						<h5>Blog</h5>
 					</Link>
-					<Link className='footer-link' to='/terms'>
+					<Link to='/terms'>
 						<h5>Terms & Privacity</h5>
 					</Link>
 				</div>
