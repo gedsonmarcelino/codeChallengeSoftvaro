@@ -54,7 +54,11 @@ const VariantAStyle = styled.div`
 	}
 `;
 
-function VariantA(props) {
+interface Props {
+	clickAction: () => null;
+}
+
+function VariantA({ clickAction }: Props) {
 	return (
 		<VariantAStyle>
 			<h1>Easily create or join a local nanny share with Hapu</h1>
@@ -63,7 +67,7 @@ function VariantA(props) {
 				and create new flexible, affordable solutions in childcare.
 			</h2>
 			<Link
-				onClick={props.clickAction}
+				onClick={clickAction}
 				className='play-button'
 				to='/play'
 			>

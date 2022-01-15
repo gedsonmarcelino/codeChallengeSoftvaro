@@ -13,10 +13,14 @@ const ButtonStyle = styled.button`
 	cursor: pointer;
 `;
 
-function Button(props) {
+interface Props extends React.HTMLProps<HTMLButtonElement> {
+	title: string
+}
+
+function Button({ title }: Props) {
 	return (
 		<ButtonStyle>
-			<h5>{props.title}</h5>
+			<h5>{title}</h5>
 		</ButtonStyle>
 	);
 }

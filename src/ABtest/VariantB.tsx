@@ -54,7 +54,11 @@ const VariantBStyle = styled.div`
 	}
 `;
 
-function VariantB(props) {
+interface Props {
+	clickAction: () => null
+}
+
+function VariantB({ clickAction }: Props) {
 	return (
 		<VariantBStyle>
 			<h1>Create the childcare you need at a price you can afford</h1>
@@ -64,7 +68,7 @@ function VariantB(props) {
 				started.
 			</h2>
 			<Link
-				onClick={props.clickAction}
+				onClick={clickAction}
 				className='play-button'
 				to='/play'
 			>

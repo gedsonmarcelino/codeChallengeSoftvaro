@@ -104,32 +104,31 @@ const VariantAStyle = styled.div`
 	}
 `;
 
-const Hero = () => {
-	return (
-		<HeroStyle>
-			<Router>
-				<div className='hero-content'>
-					<div className='hero-text'>
-						<VariantAStyle>
-							<h1>
-								Easily create or join a local nanny share with
-								Hapu
-							</h1>
-							<h2>
-								Hapu is Airbnb for nanny share. Share your home,
-								nanny and costs and create new flexible,
-								affordable solutions in childcare.
-							</h2>
-						</VariantAStyle>
-					</div>
-					<img
-						className='img-hero'
-						src={ImgHero}
-						alt="Hapu's Console"
-					/>
+const Hero = () => (
+	<HeroStyle>
+		<Router>
+			<div className='hero-content'>
+				<div className='hero-text'>
+					<VariantAStyle>
+						<h1>
+							Easily create or join a local nanny share with
+							Hapu
+						</h1>
+						<h2>
+							Hapu is Airbnb for nanny share. Share your home,
+							nanny and costs and create new flexible,
+							affordable solutions in childcare.
+						</h2>
+					</VariantAStyle>
 				</div>
-			</Router>
-		</HeroStyle>
-	);
-};
+				<img
+					className='img-hero'
+					src={ImgHero}
+					alt="Hapu's Console"
+				/>
+			</div>
+		</Router>
+	</HeroStyle>
+);
+
 export default Hero;

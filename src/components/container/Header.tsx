@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Badge from '../../utils/Badge.svg';
-import Button from '../Button';
 
 const HeaderStyle = styled.div`
 	position: absolute;

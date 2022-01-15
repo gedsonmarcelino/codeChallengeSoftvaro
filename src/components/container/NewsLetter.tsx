@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import Button from '../Button';
 
 const NewsLetterStyle = styled.section`
 	height: 322px;
@@ -112,7 +111,7 @@ function NewsLetter() {
 		formState: { errors }
 	} = useForm();
 
-	const newsLetterPost = async (data) => {
+	const newsLetterPost = async (data: any) => {
 		try {
 			const resp = await axios.post(
 				'https://api.jungledevs.com/api/v1/challenge-newsletter/',
@@ -127,7 +126,7 @@ function NewsLetter() {
 		}
 	};
 
-	const onSubmit = (data) => {
+	const onSubmit = (data: any) => {
 		console.log(errors);
 		newsLetterPost(data);
 	};
