@@ -12,6 +12,7 @@ import Footer from '../../components/container/Footer';
 import Header from '../../components/container/Header';
 
 import './styles.scss'
+import News from '../../components/container/News';
 
 function LandingPage() {
 	return (
@@ -23,6 +24,7 @@ function LandingPage() {
 			<Payments />
 			<Framework />
 			<Billing />
+			<News />
 			<Diary />
 			<Host />
 			<Footer />
