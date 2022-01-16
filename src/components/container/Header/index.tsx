@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Badge from '../../../utils/Badge.svg';
+import AuthSocial from '../../AuthSocial';
+import Modal from '../../Modal';
 
 import './styles.scss'
 
 function Header() {
+	const [isOpen, setIsOpen] = useState(false)
+
 	return (
 		<div className='header'>
+			<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+				<AuthSocial />
+			</Modal>
 
 			<div className='left-header'>
 				<Link className='badge' to='/'>
@@ -26,7 +33,7 @@ function Header() {
 				<button type='button' className='header-button'>
 					<h5>Become a Nanny Share Host</h5>
 				</button>
-				<Link className='header-link sign-in' to='/login'>
+				<Link className='header-link sign-in' to='/login' onClick={() => setIsOpen(true)}>
 					<h5>Sign In</h5>
 				</Link>
 			</div>
