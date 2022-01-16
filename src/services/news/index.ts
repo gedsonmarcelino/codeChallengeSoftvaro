@@ -18,7 +18,7 @@ interface ResultLoadNews {
 
 export const loadNews = async ( limit = 3 ) : Promise<Article[]> => {
 	const params = {
-		q: 'nany',
+		q: 'nanny',
 		pageSize: limit, 
 		apiKey: API_KEY
 	}

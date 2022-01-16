@@ -34,7 +34,6 @@ function News() {
 
 	// --- Renders ---
 	function renderLoading() {
-		console.log('[renderLoading]', [new Array(NEWS_AMOUNT)]);
 		const arr = Array.from({ length: NEWS_AMOUNT }, (v, k) => k + 1)
 		return (
 			<SkeletonTheme>
