@@ -28,13 +28,18 @@
 				border: 2px solid var(--color-gray)
 			}
 
-			h3{
-				color: var(--color-gray-dark);
-				margin-bottom: 20px;
+			.news-item-data{
+				flex: 1;
+				padding: 0 10px;
 
-				span {
-					margin: 0 10px;
-					color: var(--color-gray-light)
+				h3{
+					color: var(--color-gray-dark);
+					margin-bottom: 20px;
+	
+					span {
+						margin: 0 10px;
+						color: var(--color-gray-light)
+					}
 				}
 			}
 
