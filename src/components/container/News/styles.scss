@@ -9,7 +9,8 @@
 	.news-content {
 		text-align: center;
 		margin: 96px 0;
-		width: 784px;
+		width:auto;
+		max-width: 784px;
 		
 		h2 {
 			margin-bottom: 46px;
@@ -70,27 +71,22 @@
 	}
 
 	@media screen and (max-width: 1000px) {
-		height: 524px;
+		.news-content{
+			max-width: 360px;
+
+			.news-item{
+				img {
+					display:none;
+				}
+	
+				.news-item-data{
+					text-align: center;
+				}
+			}
+		}
 
 		.divider {
 			width: 328px;
-		}
-
-		.diary-content {
-			margin-top: 64px;
-			width: 360px;
-		}
-
-		h2 {
-			font-size: 22px;
-			margin-top: 24px;
-		}
-		
-		.Diary-text {
-			width: 328px;
-			margin-top: 16px;
-			margin-left: 16px;
-			margin-right: 16px;
 		}
 	}
 }

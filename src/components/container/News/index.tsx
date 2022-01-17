@@ -56,7 +56,6 @@ function News() {
 			<div className='news-content'>
 				<h2>Latest News</h2>
 
-
 				<div className="news-list">
 					{loading
 						? renderLoading()
