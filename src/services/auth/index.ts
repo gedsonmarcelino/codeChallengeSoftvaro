@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, User } from "firebase/auth";
+import { getAuth, signInWithPopup, User } from "firebase/auth";
 import { app, provider } from "../firebase";
 
 
@@ -16,5 +16,4 @@ export async function loginGoogle() : Promise<ResultLogin | null>{
 		console.log('[loginGoogle - error]', error);
 		return null
 	}
-  
 }

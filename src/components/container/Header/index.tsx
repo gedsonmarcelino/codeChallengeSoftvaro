@@ -7,8 +7,16 @@ import Modal from '../../Modal';
 import './styles.scss'
 
 function Header() {
+	// --- States ---
 	const [isOpen, setIsOpen] = useState(false)
 
+	// --- Handlers ---
+	function handleOnLogin(event: React.MouseEvent<HTMLAnchorElement>) {
+		event.preventDefault()
+		setIsOpen(true)
+	}
+
+	// --- Renders ---
 	return (
 		<div className='header'>
 			<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
@@ -33,7 +41,7 @@ function Header() {
 				<button type='button' className='header-button'>
 					<h5>Become a Nanny Share Host</h5>
 				</button>
-				<Link className='header-link sign-in' to='/login' onClick={() => setIsOpen(true)}>
+				<Link className='header-link sign-in' to='/login' onClick={(event) => handleOnLogin(event)}>
 					<h5>Sign In</h5>
 				</Link>
 			</div>
