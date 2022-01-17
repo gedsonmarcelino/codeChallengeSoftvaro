@@ -5,6 +5,7 @@ import { formatDate } from '../../../utils/format';
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import './styles.scss'
+import Divider from '../../Divider';
 
 const NEWS_AMOUNT = 3;
 
@@ -52,7 +53,7 @@ function News() {
 
 	return (
 		<section id='news'>
-			<span className='divider' />
+			<Divider />
 			<div className='news-content'>
 				<h2>Latest News</h2>
 

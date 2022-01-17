@@ -1,0 +1,10 @@
+.divider {
+  width: 784px;
+  border-top: solid 2px var(--color-gray);
+}
+
+@media screen and (max-width: 1000px) {
+  .divider {
+    width: 328px;
+  }
+}

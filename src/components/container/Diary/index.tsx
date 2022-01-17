@@ -1,12 +1,13 @@
 import React from 'react';
 import ImgSect5 from '../../../images/ImageSection5.png';
+import Divider from '../../Divider';
 
 import './styles.scss'
 
 function Diary() {
 	return (
 		<section className='diary'>
-			<span className='divider' />
+			<Divider />
 			<div className='diary-content'>
 				<img src={ImgSect5} alt='Nanny Share Diary' />
 				<h2>Coming soon: Nanny Share Daily Diary!</h2>

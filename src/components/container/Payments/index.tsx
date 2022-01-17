@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ImgSect3 from '../../../images/ImageSection3.png';
+import Divider from '../../Divider';
 
 import './styles.scss'
 
@@ -31,7 +32,7 @@ function Payment() {
 					</Link>
 				</div>
 			</div>
-			<span className='divider' />
+			<Divider />
 		</section>
 	);
 }
