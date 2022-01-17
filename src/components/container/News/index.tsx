@@ -40,7 +40,7 @@ function News() {
 			<SkeletonTheme>
 				{arr.map(item => (
 					<div key={`loading-${item}`} className="news-item" >
-						<Skeleton width={160} height={160} />
+						<Skeleton className='skeleton-image' width={160} height={160} />
 						<div className="news-item-data">
 							<Skeleton height={50} style={{ marginBottom: '10px' }} />
 							<Skeleton count={3} height={25} style={{ margin: '5px 0' }} />

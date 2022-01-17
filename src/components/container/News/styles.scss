@@ -9,7 +9,7 @@
 	.news-content {
 		text-align: center;
 		margin: 96px 0;
-		width:auto;
+		width:100%;
 		max-width: 784px;
 		
 		h2 {
@@ -75,7 +75,8 @@
 			max-width: 360px;
 
 			.news-item{
-				img {
+				img,
+				.skeleton-image {
 					display:none;
 				}
 	
