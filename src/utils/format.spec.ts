@@ -1,4 +1,5 @@
-import { formatDate } from "../../utils/format";
+import { formatDate } from "./format";
+
 
 describe('Format - formatDate', () => {
 	it('should return 01/01/2010 10:00.', () => {

@@ -20,7 +20,7 @@ function AuthSocial() {
 	// --- Renders ---
 	return (
 		<>
-			<button type="button" onClick={handleGoogleAuth} disabled={loading}>
+			<button data-testid="googleButton" type="button" onClick={handleGoogleAuth} disabled={loading}>
 				{!loading ? 'Google' : '...'}
 			</button>
 		</>

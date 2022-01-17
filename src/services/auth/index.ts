@@ -13,7 +13,7 @@ export async function loginGoogle() : Promise<ResultLogin | null>{
 		const {user} = result;
 		return { user }
 	} catch ( error ) {
-		console.log('[loginGoogle - error]', error);
+		// console.log('[loginGoogle - error]', error);
 		return null
 	}
 }
