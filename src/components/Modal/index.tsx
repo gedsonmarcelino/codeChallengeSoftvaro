@@ -16,6 +16,7 @@ function Modal({ children, isOpen, onClose }: Props) {
 			onRequestClose={() => onClose()}
 			className='modal'
 			overlayClassName='modal-overlay'
+			ariaHideApp={false}
 		>
 			{children}
 		</ReactModal>

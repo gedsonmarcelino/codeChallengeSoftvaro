@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { loginGoogle } from '../../services/auth'
 
+import IconGoogle from '../../images/icon-google.png'
+import './styles.scss'
 
 function AuthSocial() {
 	// --- States ---
@@ -19,11 +21,21 @@ function AuthSocial() {
 
 	// --- Renders ---
 	return (
-		<>
-			<button data-testid="googleButton" type="button" onClick={handleGoogleAuth} disabled={loading}>
-				{!loading ? 'Google' : '...'}
+		<div className='social-content'>
+			<h2>Sign In</h2>
+			<p>Select an option below to connect with us.</p>
+			<button className='button-google' data-testid="googleButton" type="button" onClick={handleGoogleAuth} disabled={loading}>
+				{!loading
+					?
+					<>
+						<img src={IconGoogle} width={26} height={26} alt="Google" />
+						<span>Google</span>
+					</>
+					:
+					<span>...</span>
+				}
 			</button>
-		</>
+		</div>
 	)
 }
 
