@@ -3,8 +3,16 @@ import { loginGoogle } from '../../services/auth'
 
 import IconGoogle from '../../images/icon-google.png'
 import './styles.scss'
+import { useUserContext } from '../store/indext'
 
-function AuthSocial() {
+interface Props {
+	onCloseModal: () => void
+}
+
+function AuthSocial({ onCloseModal }: Props) {
+	// --- Hooks ---
+	const { setUserData } = useUserContext()
+
 	// --- States ---
 	const [loading, setLoading] = useState(false)
 
@@ -14,7 +22,10 @@ function AuthSocial() {
 
 		const result = await loginGoogle()
 		if (!result) alert('Sorry, Something has happened wrong. Try to connect again.')
-		else alert('It will be redirected to an especific path.')
+		else {
+			setUserData(result.user)
+			return onCloseModal()
+		}
 
 		setLoading(false)
 	}

@@ -1,0 +1,13 @@
+#main{
+  background-color: var(--color-white);
+
+  display: grid;
+  justify-items: center;
+  place-self: center stretch; 
+  
+  #page-content {
+    margin: 40px 0;
+    width: 100%;
+  }
+}
+

@@ -46,6 +46,19 @@
 		margin-top: 28px;
 	}
 
+	.user-content{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		margin-top: 10px;
+
+		span{
+			color: var(--color-white);
+			font-weight: normal;
+			margin-bottom: 4px;
+		}
+	}
+
 	@media screen and (max-width: 1000px) {
 		.sign-in {
 			display: none;

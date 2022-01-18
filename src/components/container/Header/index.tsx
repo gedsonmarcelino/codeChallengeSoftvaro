@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import Badge from '../../../utils/Badge.svg';
 import AuthSocial from '../../AuthSocial';
 import Modal from '../../Modal';
+import { useUserContext } from '../../store/indext';
 
 import './styles.scss'
 
 function Header() {
+	// --- Hooks ---
+	const { isAuthenticated, user, setUserData } = useUserContext()
+
 	// --- States ---
 	const [isOpen, setIsOpen] = useState(false)
 
@@ -20,7 +24,7 @@ function Header() {
 	return (
 		<div className='header'>
 			<Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-				<AuthSocial />
+				<AuthSocial onCloseModal={() => setIsOpen(false)} />
 			</Modal>
 
 			<div className='left-header'>
@@ -41,9 +45,20 @@ function Header() {
 				<button type='button' className='header-button'>
 					<h5>Become a Nanny Share Host</h5>
 				</button>
-				<Link className='header-link sign-in' to='/login' onClick={(event) => handleOnLogin(event)}>
-					<h5>Sign In</h5>
-				</Link>
+
+				{!isAuthenticated()
+					? (
+						<Link className='header-link sign-in' to='/login' onClick={(event) => handleOnLogin(event)}>
+							<h5>Sign In</h5>
+						</Link>
+					)
+					: (
+						<div className='user-content'>
+							<span>{user.displayName}</span>
+							<button type="button" onClick={() => setUserData({} as any)}>Logout</button>
+						</div>
+					)
+				}
 			</div>
 
 		</div>

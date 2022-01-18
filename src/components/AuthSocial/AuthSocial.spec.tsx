@@ -9,12 +9,13 @@ window.alert = jest.fn()
 describe('AuthSocial - Component', () => {
 
 	it('should show login button google.', () => {
-		render(<AuthSocial />)
+
+		render(<AuthSocial onCloseModal={jest.fn} />)
 		expect(screen.getByTestId('googleButton')).toBeInTheDocument()
 	})
 
 	it('should login in google.', async () => {
-		render(<AuthSocial />)
+		render(<AuthSocial onCloseModal={jest.fn} />)
 
 		const button = screen.getByTestId('googleButton')
 
