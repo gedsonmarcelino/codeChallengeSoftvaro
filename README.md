@@ -1,10 +1,10 @@
-Desafio Técnico para a vaga de Desenvolvedor Front-end React na Softvaro Consultoria
+# Desafio Técnico para a vaga de Desenvolvedor Front-end React na Softvaro Consultoria
  
-O desafio:
+## O desafio:
  
 A Softvaro é uma consultoria com muitos clientes e projetos. Um cliente antigo que havia contratado a Softvaro para desenvolver uma landingpage simples a alguns anos pediu para que nós atualizassemos o projeto. Você foi designado para refatorar o código legado, atualizando ele para as tecnologias que usamos atualmente, aplicando boas práticas padrões no projeto, desenvolvendo testes para o projeto, etc. Seu papel é pegar esse simples projeto e trazer ele para o padrão de código e qualidade em que a Softaro trabalha atualmente.
  
-Esperamos que após a refatoração o código:
+## Esperamos que após a refatoração o código:
  
 seja adaptado para a Stack atual da Softvaro, Type Script e Sass;
 possua padrões de codificação adotados;
@@ -15,3 +15,36 @@ tenha baixa complexidade;
 e qualquer coisa que você achar que a aplicação deve seguir.
  
 Além da refatoração na landing page, o cliente quer que seja adicionada um sistema de login usando as credenciais do google dos usuários e que uma seção seja adicionada na landing page em que as manchetes e links das 3 últimas notícias com a palavra chave  'nanny' sejam apresentadas aos clientes. Os dados podem ser consumidos da https://newsapi.org/
+
+----
+
+## Requirements
+
+* Node 14.17.0
+* Newsapi Key
+* Firebase
+
+## Installation
+
+1. First at all, clone the project
+
+```
+$ git clone https://github.com/gedsonmarcelino/codeChallengeSoftvaro.git
+```
+2. Set environment variables on .env file, with Newsapi KEY and Firebase config
+3. Install libraries
+
+```
+$ yarn # or npm install
+```
+
+4. Run the project
+```
+$ yarn start # or npm run start
+``` 
+
+## Tests
+
+```
+$ yarn test
+```
