@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Layout from './components/Layout';
-import { ContextProvider } from './components/store/indext';
+import { ContextProvider } from './store';
 import LandingPage from './pages/LandingPage'
 import NannyPage from './pages/NannyPage';
 import SharePage from './pages/SharePage';

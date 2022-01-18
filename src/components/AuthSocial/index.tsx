@@ -3,14 +3,14 @@ import { loginGoogle } from '../../services/auth'
 
 import IconGoogle from '../../images/icon-google.png'
 import './styles.scss'
-import { useUserContext } from '../store/indext'
+import { useUserContext } from '../../store'
 
 interface Props {
 	onCloseModal: () => void
 }
 
 function AuthSocial({ onCloseModal }: Props) {
-	// --- Hooks ---
+	// --- Hooks --- 
 	const { setUserData } = useUserContext()
 
 	// --- States ---
