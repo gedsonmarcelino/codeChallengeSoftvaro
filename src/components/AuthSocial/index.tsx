@@ -17,10 +17,12 @@ function AuthSocial({ onCloseModal }: Props) {
 	const [loading, setLoading] = useState(false)
 
 	// --- Handlers ---
+	// eslint-disable-next-line consistent-return
 	async function handleGoogleAuth() {
 		setLoading(true)
 
 		const result = await loginGoogle()
+		// eslint-disable-next-line no-alert
 		if (!result) alert('Sorry, Something has happened wrong. Try to connect again.')
 		else {
 			setUserData(result.user)
